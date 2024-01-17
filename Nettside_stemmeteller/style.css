@@ -1,0 +1,230 @@
+/*Felles for alle sider*/
+
+    body {
+        margin: 0; 
+        background-color: #494d5f; 
+        scroll-behavior: smooth;
+    }
+
+/*Valgside*/
+
+    /*header*/
+
+        .header-valgside {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            color: white;
+        }
+
+        .header-valgside h1 {
+            font-family: "kranto-display", sans-serif;
+            font-weight: 500;
+            margin: 0 0 0 .7vw;
+            font-size: calc(2vw + 20px);
+        }
+
+        .header-valgside p {
+            font-family: "kranto-display", sans-serif;
+            margin: 0 0 0 .94vw;
+            font-size: calc(.7vw + 7px);
+        }
+
+    /*content*/
+
+        .content-valgside {
+            display: flex;
+            margin-top: 4rem;
+            flex-direction: row;
+            scroll-behavior: smooth;
+        }
+
+        .velg {
+            display: flex;
+            flex-direction: column;
+            margin-left: 1vw;
+            row-gap: 2.2vw;
+        }
+
+        /*Valg knapper*/
+
+            .content-valgside p {
+                font-family: "kranto-display", sans-serif;
+                padding: 1vw;
+                padding-bottom: .9vw;
+                border-radius: 20px;
+                font-size: calc(.7vw + 7px);
+                color: white;
+                width: fit-content;
+                display: flex;
+                flex-direction: row;
+                transition: .1s ease-in-out;
+                cursor: pointer;
+                margin-left: 1vw;
+                margin: 0;
+            }
+
+            .content-valgside p:hover {
+                filter: brightness(75%);
+            }
+
+            #h {
+                background-color: #009de0;
+            }
+
+            #ap {
+                background-color: #e81502;
+            }
+
+            #frp {
+                background-color: #0c366c;
+            }
+
+            #sp {
+                background-color: #b7cc2b;
+                color: black;
+            }
+
+            #sv {
+                background-color: #cc08c9;
+            }
+
+            #krf {
+                background-color: #feb937;
+                color: black;
+            }
+
+            #inp {
+                background-color: #52888e;
+            }
+
+            #v {
+                background-color: #12c4a7;
+            }
+
+            #mdg {
+                background-color: #138031;
+            }
+        
+            #r {
+                background-color: #7b0a02;
+            }
+
+            #pp {
+                background-color: #98647f;
+            }
+
+            #kon {
+                background-color: #6694bf;
+                scroll-behavior: smooth;
+                transition-duration: .3s;
+            }
+
+            .ned /*pil ned nederst til venstre*/ {
+                color: white;
+                position: fixed;
+                bottom: 0;
+                height: 3vw;
+                align-items: center;
+                font-size: calc(1.3vw + 15px);
+                display: flex;
+                justify-content: center;
+                z-index: 2000;
+                width: 19%;
+                scroll-behavior: smooth;
+                left: 0;
+                background: linear-gradient(to top, rgba(73, 77, 95, 1) 40%, rgba(73, 77, 95, .8) 60%, rgba(73, 77, 95, .5) 80%, rgba(73, 77, 95, 0) 100%)
+            }
+            
+        /*diagram*/
+
+            /*Søylediagram*/
+            
+                .results {
+                    display: flex;
+                    flex-direction: column;
+                    margin-left: 3vw;
+                    row-gap: 2.2vw;
+                }
+
+                .bar {
+                    font-size: calc(.7vw + 7px);
+                    font-family: "kranto-display", sans-serif;
+                    display: flex;
+                    padding: 1vw;
+                    padding-bottom: .9vw;
+                    border-radius: 20px;
+                    align-items: center;
+                    color: white;
+                    margin: 0 0 3.vw 0;
+                    
+                }
+
+                #h-bar {
+                    background-color: #009de0;
+                }
+
+                #ap-bar {
+                    background-color: #e81502 ;
+                }
+
+                #frp-bar {
+                    background-color: #0c366c ;
+                }
+
+                #sp-bar {
+                    background-color: #b7cc2b ;
+                }
+
+                #sv-bar {
+                    background-color: #cc08c9 ;
+                }
+
+                #krf-bar {
+                    background-color: #feb937 ;
+                }
+
+                #inp-bar {
+                    background-color: #52888e ;
+                }
+
+                #v-bar {
+                    background-color: #12c4a7 ;
+                }
+
+                #mdg-bar {
+                    background-color: #138031 ;
+                }
+
+                #r-bar {
+                    background-color: #7b0a02 ;
+                }
+
+                #pp-bar {
+                    background-color: #98647f ;
+                }
+
+                #kon-bar {
+                    background-color: #6694bf ;
+                }
+
+            /*Kakediagram/tøm data*/
+
+            .bottom {
+                display: flex;
+                position: relative;
+                justify-content: space-around;
+            }
+
+            #clear {
+                height: min-content;
+                margin-top: 2vw;
+                font-size: calc(.7vw + 7px);
+            }
+
+            #mychart1 {
+                width: 50vw;
+                height: 50vw;
+                font-size: calc(.7vw + 7px);
+                font-family: "kranto-display", sans-serif;
+            }

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kommunevalg 2023</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/knd4jzv.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://github.com/chartjs/Chart.js.git">
+</head>
+<body>
+    
+    
+    <header class="header-valgside">
+        <h1>Erikstad Kommune</h1>
+        <p>kommunevalg 2023</p>
+    </header>
+
+    <div class="content-valgside">
+        <div class="velg" id="velgContainer">
+            <p id="h"  onclick="vote('h')">Stem Høyre</p>
+            <p id="ap" onclick="vote('ap')">Stem Arbeiderpartiet</p>
+            <p id="frp" onclick="vote('frp')">Stem Fremskrittspartiet</p>
+            <p id="sp" onclick="vote('sp')">Stem Senterpartiet</p>
+            <p id="sv" onclick="vote('sv')">Stem Sosialistisk Venstreparti</p>
+            <p id="krf" onclick="vote('krf')">Stem Kristelig Folkeparti</p>
+            <p id="inp" onclick="vote('inp')">Stem Industri- og Næringsparti</p>
+            <p id="v" onclick="vote('v')">Stem Venstre</p>
+            <p id="mdg" onclick="vote('mdg')">Stem Miljøpartiet De Grønne</p>
+            <p id="r" onclick="vote('r')">Stem Rødt</p>
+            <p id="pp" onclick="vote('pp')">Stem Pensjonistpartiet</p>
+            <p id="kon" onclick="vote('kon')">Stem Konservativ</p>
+        </div>
+        <a href="#mychart">
+            <div class="ned" id="ned">
+                <i class='bx bx-down-arrow-alt' id="pil-ned"></i>
+            </div>
+        </a>
+        <div class="results" id="resultsContainer">
+            <div id="h-bar" class="bar"></div>
+            <div id="ap-bar" class="bar"></div>
+            <div id="frp-bar" class="bar"></div>
+            <div id="sp-bar" class="bar"></div>
+            <div id="sv-bar" class="bar"></div>
+            <div id="krf-bar" class="bar"></div>
+            <div id="inp-bar" class="bar"></div>
+            <div id="v-bar" class="bar"></div>
+            <div id="mdg-bar" class="bar"></div>
+            <div id="r-bar" class="bar"></div>
+            <div id="pp-bar" class="bar"></div>
+            <div id="kon-bar" class="bar"></div>
+        </div>
+    </div>
+    
+    <div class="bottom">
+
+        <button onclick="cleardata()" id="clear">Tøm data</button>
+
+        <div id="mychart1">
+            <canvas id="mychart"></canvas>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>   
+    <script src="script.js"></script>   
+</body>
+</html>
